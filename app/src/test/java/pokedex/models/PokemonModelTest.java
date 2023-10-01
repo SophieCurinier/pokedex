@@ -32,6 +32,11 @@ public class PokemonModelTest {
         assertEquals(12, pokemon.getHeight());
     }
 
+    @Test public void testWeight() {
+        pokemon.setWeight(7);
+        assertEquals(7, pokemon.getWeight());
+    }
+
     @Test public void testDescription() {
         pokemon.setDescription("Loves to eat");
         assertEquals("Loves to eat", pokemon.getDescription());

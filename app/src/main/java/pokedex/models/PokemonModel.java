@@ -8,6 +8,7 @@ public class PokemonModel {
     private String name ;
     private int id;
     private int height;
+    private int weight;
     private String description;
 
     // Constructor
@@ -15,6 +16,7 @@ public class PokemonModel {
         name = "";
         id = 0;
         height = 0;
+        weight = 0;
         description = "";
     }
 
@@ -29,6 +31,10 @@ public class PokemonModel {
 
     public int getHeight() {
         return height;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 
     public String getDescription() {
@@ -49,6 +55,12 @@ public class PokemonModel {
     public void setHeight(int height) {
         if (height >= 0) {
             this.height = height;
+        }
+    }
+
+    public void setWeight(int weight) {
+        if (height >= 0) {
+            this.weight = weight;
         }
     }
 
