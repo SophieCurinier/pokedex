@@ -19,4 +19,9 @@ public class PokemonModelTest {
         pokemon.setName("Bulbizzare");
         assertEquals("Bulbizzare", pokemon.getName());
     }
+
+    @Test public void testSetId() {
+        pokemon.setId(1);
+        assertEquals(1, pokemon.getId());
+    }
 }

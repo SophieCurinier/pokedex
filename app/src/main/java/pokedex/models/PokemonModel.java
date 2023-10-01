@@ -6,10 +6,12 @@ package pokedex.models;
 public class PokemonModel {
     // Attribute
     private String name ;
+    private int id;
 
     // Constructor
     PokemonModel() {
         name = "";
+        id = 0;
     }
 
     // Getters
@@ -17,8 +19,18 @@ public class PokemonModel {
         return name;
     }
 
+    public int getId() {
+        return id;
+    }
+
     // Setters
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setId(int id) {
+        if (id >= 0) {
+            this.id = id;
+        }
     }
 }
