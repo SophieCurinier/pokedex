@@ -24,4 +24,9 @@ public class PokemonModelTest {
         pokemon.setId(1);
         assertEquals(1, pokemon.getId());
     }
+
+    @Test public void testHeight() {
+        pokemon.setHeight(12);
+        assertEquals(12, pokemon.getHeight());
+    }
 }
