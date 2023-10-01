@@ -4,5 +4,21 @@
 package pokedex.models;
 
 public class PokemonModel {
+    // Attribute
+    private String name ;
 
+    // Constructor
+    PokemonModel() {
+        name = "";
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
 }
