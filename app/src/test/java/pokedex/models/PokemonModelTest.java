@@ -3,20 +3,20 @@
  */
 package pokedex.models;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
 
 public class PokemonModelTest {
 
     private PokemonModel pokemon;
 
-    @BeforeEach
-    public void setUp() {
+    @BeforeEach public void setUp() {
         pokemon = new PokemonModel();
     }
 
     @Test public void testSetName() {
-        pokemon.setName("Bulbizare");
+        pokemon.setName("Bulbizzare");
         assertEquals("Bulbizzare", pokemon.getName());
     }
 }
