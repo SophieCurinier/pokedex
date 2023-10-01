@@ -4,8 +4,10 @@
 package pokedex.models;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.lang.annotation.Target;
 
 public class PokemonModelTest {
 
@@ -28,5 +30,10 @@ public class PokemonModelTest {
     @Test public void testHeight() {
         pokemon.setHeight(12);
         assertEquals(12, pokemon.getHeight());
+    }
+
+    @Test public void testDescription() {
+        pokemon.setDescription("Loves to eat");
+        assertEquals("Loves to eat", pokemon.getDescription());
     }
 }

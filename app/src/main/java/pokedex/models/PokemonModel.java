@@ -8,12 +8,14 @@ public class PokemonModel {
     private String name ;
     private int id;
     private int height;
+    private String description;
 
     // Constructor
     PokemonModel() {
         name = "";
         id = 0;
         height = 0;
+        description = "";
     }
 
     // Getters
@@ -27,6 +29,10 @@ public class PokemonModel {
 
     public int getHeight() {
         return height;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     // Setters
@@ -44,5 +50,9 @@ public class PokemonModel {
         if (height >= 0) {
             this.height = height;
         }
+    }
+
+    public void setDescription(String description){
+        this.description = description;
     }
 }
