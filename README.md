@@ -21,8 +21,8 @@ To set up and run the project, follow these steps:
 ## Roadmap
 - [ ] Do a HTTP Request with Pokemon API
 - [X] Create pokemon Model
-- [ ] Create pokemon Controler
-- [ ] Create pokemon View
+- [X] Create pokemon Controler
+- [X] Create pokemon View
 
 ## License
 
