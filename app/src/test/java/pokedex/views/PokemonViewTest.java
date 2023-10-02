@@ -13,4 +13,13 @@ public class PokemonViewTest {
     @BeforeEach public void setUp() {
         view = new PokemonView();
     }
+
+    @Test public void getEmptyView() {
+        assertEquals("", view.getView());
+    }
+
+    @Test public void setView() {
+        view.setView(1, "Bulbizzare", 7, 2, "Love water.");
+        assertEquals("=============================\nPokémon #1\nName : Bulbizzare\nHeight : 7\nDescription : Love water.\n=============================\n",view.getView());
+    }
 }
