@@ -3,6 +3,9 @@
 ## About the project
 The Pokedex project is a command-line application designed to retrieve and display information about Pokémon. It leverages the PokeAPI to fetch data about Pokémon based on their ID. This project is an exercise in implementing Object-Oriented Programming (OOP) principles, specifically the SOLID principles, in a Java-based application.
 
+### Pattern
+We use MOdel-view-controller (MVC) as design pattern.
+
 ## Getting start
 To set up and run the project, follow these steps:
 ### Prerequisite
@@ -17,7 +20,7 @@ To set up and run the project, follow these steps:
 
 ## Roadmap
 - [ ] Do a HTTP Request with Pokemon API
-- [ ] Create pokemon Model
+- [X] Create pokemon Model
 - [ ] Create pokemon Controler
 - [ ] Create pokemon View
 
