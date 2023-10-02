@@ -20,6 +20,6 @@ public class PokemonViewTest {
 
     @Test public void setView() {
         view.setView(1, "Bulbizzare", 7, 2, "Love water.");
-        assertEquals("=============================\nPokémon #1\nName : Bulbizzare\nHeight : 7\nDescription : Love water.\n=============================\n",view.getView());
+        assertEquals("=============================\nPokémon #1\nName : Bulbizzare\nHeight : 7\nWeight : 2\nDescription : Love water.\n=============================\n",view.getView());
     }
 }

@@ -20,6 +20,7 @@ public class PokemonView {
         view += "Pokémon #" + id + "\n";
         view += "Name : " + name + "\n";
         view += "Height : " + height + "\n";
+        view += "Weight : " + weight + "\n";
         view += "Description : " + description + "\n";
         view += "=============================\n";
     }
