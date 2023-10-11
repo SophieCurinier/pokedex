@@ -16,4 +16,15 @@ public class PokemonApiClientTest {
     @BeforeEach public void setUp() {
         api = new PokemonApiClient();
     }
+
+    @Test public void testGetPokemonInfoTest() {
+        PokemonModel pokemon = new PokemonModel("bulbasaur",1,7,69,"");
+        PokemonModel apiPokemon = api.getPokemonInfo(1);
+        assertEquals(pokemon,apiPokemon);
+    }
+
+    @Test public void testGetPokemonInfoWithInvalidId() {
+        PokemonModel apiPokemonModel = api.getPokemonInfo(-1);
+        assertEquals(null, apiPokemonModel);
+    }
 }
