@@ -1,5 +1,6 @@
 package pokedex.controllers;
 import pokedex.models.PokemonModel;
+import pokedex.models.PokemonApiClient;
 import pokedex.views.PokemonView;
 
 public class PokemonController {
@@ -37,7 +38,17 @@ public class PokemonController {
     }
 
     // Methods
-    public void updateView() {
+    private void updateView() {
         view.setView(model.getId(), model.getName(), model.getHeight(), model.getWeight(), model.getDescription());
+    }
+
+    public void setPokemon(int pokemonId) {
+        PokemonApiClient api = new PokemonApiClient();
+        model = api.getPokemonInfo(pokemonId);
+    }
+
+    public void showPokemon() {
+        updateView();
+        System.out.println(view.getView());
     }
 }
